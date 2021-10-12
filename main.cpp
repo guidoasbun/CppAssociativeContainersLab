@@ -9,7 +9,11 @@ using namespace std;
 int main()
 {
 
-    multiset<int> myMSet1 = {2, 2, 4, 6, 6, 6, 6, 7, 8, 9, 9, 9};
+    multiset<int> myMSet1 = {1, 2, 2, 3, 4, 4};
+    multiset<int> myMSet2 = {2, 2, 4, 6, 6, 6, 6, 7, 8, 9, 9, 9};
+
+    cout << clusters(myMSet1) << endl;
+    cout << clusters(myMSet2) << endl;
 
 
     multimap<int, int> multiMap1;

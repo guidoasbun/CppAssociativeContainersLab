@@ -13,26 +13,22 @@ using namespace std;
 
 int clusters(const multiset<int>& mSet)
 {
+    if (mSet.empty())
+        return 0;
     int clusters{0};
+    set<int> visited;
 
-    if (!mSet.empty())
+    for (const int& elem : mSet)
     {
-        int temp = *mSet.begin();
-        int count = 0;
-        for (auto iter = mSet.begin(); iter != mSet.end(); ++iter)
+        if(visited.find(elem) != visited.end())
+            continue;
+        else
         {
-
-            if(*iter == *iter++)
-            {
-                count ++;
-            }
-            else
-            {
-
-            }
+            visited.insert(elem);
+            if (mSet.count(elem) > 1)
+                clusters++;
         }
     }
-
     return clusters;
 }
 
