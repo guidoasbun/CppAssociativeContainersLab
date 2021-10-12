@@ -6,21 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/rodrigoasbun/CLionProjects/CppAssociativeContainersLab/Functions.h
-iostream
--
-set
--
-map
--
-
-/Users/rodrigoasbun/CLionProjects/CppAssociativeContainersLab/main.cpp
-Functions.h
-/Users/rodrigoasbun/CLionProjects/CppAssociativeContainersLab/Functions.h
-iostream
--
-set
--
-map
--
-
