@@ -20,8 +20,9 @@ int clusters(const multiset<int>& mSet)
 
     for (const int& elem : mSet)
     {
-        if(visited.find(elem) != visited.end())
-            continue;
+        bool stop = false;
+        if((visited.find(elem) != visited.end()) && !stop)
+            stop = false;
         else
         {
             visited.insert(elem);
