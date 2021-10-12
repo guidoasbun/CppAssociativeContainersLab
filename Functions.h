@@ -50,4 +50,31 @@ bool sameKeyValue(const multimap<int, int>& mMap)
     return true;
 }
 
+void tenMultiplesOf(set<int>& intSet, int integer)
+{
+    int intSetCount{0};
+    int num{1};
+    while (intSetCount < 10)
+    {
+        int multiple = integer * num;
+        {
+            if ((multiple % 10) != integer)
+            {
+                intSet.insert(multiple);
+                intSetCount++;
+            }
+            num++;
+        }
+    }
+}
+
+void printSet(const set<int>& aSet)
+{
+    for (auto elem : aSet)
+        cout << elem << " ";
+
+    cout << endl;
+}
+
+
 #endif //CPPASSOCIATIVECONTAINERSLAB_FUNCTIONS_H

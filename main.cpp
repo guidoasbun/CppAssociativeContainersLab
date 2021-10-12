@@ -6,11 +6,12 @@
 using namespace std;
 
 
-
 int main()
 {
 
     multiset<int> myMSet1 = {2, 2, 4, 6, 6, 6, 6, 7, 8, 9, 9, 9};
+
+
     multimap<int, int> multiMap1;
     multiMap1.insert(pair<int, int>(3,3));
     multiMap1.insert(pair<int, int>(4,4));
@@ -28,10 +29,17 @@ int main()
     cout << sameKeyValue(multiMap1) << endl;
     cout << sameKeyValue(multiMap2) << endl;
 
-//    auto iter = multiMap1.begin();
-//    cout << iter->first << endl;
+    set<int> set2;
+    set<int> set3;
 
+    tenMultiplesOf(set2, 2);
+    tenMultiplesOf(set3, 3);
+
+
+    printSet(set2);
+    printSet(set3);
 
 
     return 0;
 }
+
