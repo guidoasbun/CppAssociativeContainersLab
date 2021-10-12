@@ -1,5 +1,5 @@
 //
-// Created by Rodrigo Asbun on 10/11/21.
+// Created by Guido Asbun on 10/11/21.
 //
 
 #ifndef FUNCTIONS_H
@@ -21,7 +21,7 @@ int clusters(const multiset<int>& mSet)
     for (const int& elem : mSet)
     {
         bool stop = false;
-        if((visited.find(elem) != visited.end()) && !stop)
+        if(visited.find(elem) != visited.end())
             stop = false;
         else
         {
@@ -64,14 +64,5 @@ void tenMultiplesOf(set<int>& intSet, int integer)
         }
     }
 }
-
-void printSet(const set<int>& aSet)
-{
-    for (auto elem : aSet)
-        cout << elem << " ";
-
-    cout << endl;
-}
-
 
 #endif //CPPASSOCIATIVECONTAINERSLAB_FUNCTIONS_H

@@ -5,6 +5,7 @@
 
 using namespace std;
 
+void printSet(const set<int>& aSet);
 
 int main()
 {
@@ -45,5 +46,14 @@ int main()
 
 
     return 0;
+}
+
+
+void printSet(const set<int>& aSet)
+{
+    for (auto elem : aSet)
+        cout << elem << " ";
+
+    cout << endl;
 }
 
